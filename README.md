@@ -1,7 +1,3 @@
-Here is a professional `README.md` file you can create in your `Syntax` folder. It explains the project, how the testing was conducted based on the Word document, and includes the expected outputs for both the Scanner (Lexical Analysis) and the Parser (Syntactic Analysis).
-
-You can copy and paste the markdown below into a new file named **`README.md`**.
-
 ***
 
 # JAY Language Compiler (CS 361)
@@ -102,5 +98,3 @@ Parsing successful!
 *   **Assignments**: Inside the block, `i = 7;` is parsed as an `Assignment` statement. The target is a `Variable` (`i`) and the source is a `Value` (`7`).
 *   **Syntax Errors**: If an invalid statement is provided (e.g., missing a semicolon or using an undeclared type), the parser will catch it and print a message like: `Syntax error - Expecting: ; But saw: Separator = }`.
 
----
-*Created for CS 361. Test cases derived from the official JAY Scanner Testing document.*
