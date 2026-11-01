@@ -23,10 +23,18 @@ For this assignment, we were tasked with completing the Lexical Analyzer (Scanne
 
 To test the scanner, I created a comprehensive file based on the provided Word document that included valid keywords, identifiers, long integers, and deliberate lexical errors.
 
+### How to Run
+
+```bash
+javac *.java
+java ScannerDemo
+```
+
+
 Expected Output (Snippet)
 When running the scanner on the test file, the output correctly identifies the type and value of every token while skipping over comments.
 
-
+```text
 Token 1 - Type: Keyword - Value: void
 Token 2 - Type: Keyword - Value: main
 Token 3 - Type: Separator - Value: (
@@ -40,21 +48,23 @@ Token 10 - Type: Operator - Value: =
 Token 11 - Type: Literal - Value: 7
 Token 12 - Type: Separator - Value: ;
 Token 13 - Type: Separator - Value: }
+```
 
-Explanation: The scanner works perfectly. Things like True and do are correctly classified as Identifier (since JAY is case-sensitive and True isn't a keyword), and bad tokens like @ or & are safely categorized as Type: Other instead of crashing the program.
+**Explanation:** The scanner works perfectly. Things like True and do are correctly classified as Identifier (since JAY is case-sensitive and True isn't a keyword), and bad tokens like @ or & are safely categorized as Type: Other instead of crashing the program.
 
-** Testing the Parser
+## Testing the Parser
 After confirming the scanner works, I tested the parser using a syntactically valid program.
 
 How to Run
-
+```bash
 javac *.java
 java ParserDemo
+```
 
-Expected Output
+**Expected Output**
 The parser successfully reads the tokens and generates the Abstract Syntax Tree (AST).
 
-
+```text
 Abstract syntax of the JAY Program: 
   Declarations: 
     Declarations = {<i, int>}
@@ -65,5 +75,6 @@ Abstract syntax of the JAY Program:
       Value: 
         7
 Parsing successful!
-Explanation: The parser correctly interprets the int i; declaration and the i = 7; assignment. It builds the tree node by node using the grammar rules we learned in class, proving that the token stream is syntactically correct for JAY.
+```
+**Explanation:** The parser correctly interprets the int i; declaration and the i = 7; assignment. It builds the tree node by node using the grammar rules we learned in class, proving that the token stream is syntactically correct for JAY.
 
