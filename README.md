@@ -1,7 +1,7 @@
 # CS 361 - JAY Compiler Project
 
 **Author:** Jerry, Nick
-**Course:** CS 361 - Concepts of Programming Languages
+**Course:** CS 361
 
 ## Project Overview
 
