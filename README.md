@@ -5,8 +5,6 @@
 
 ## Project Overview
 
-For this assignment, we were tasked with completing the Lexical Analyzer (Scanner) and the Syntactic Analyzer (Parser) for a subset of the JAY programming language.
-
 *   **Lexical Analysis (Scanner):** Takes the raw text from a `.jay` file and breaks it down into a stream of valid tokens (Keywords, Identifiers, Literals, Operators, Separators).
 *   **Syntactic Analysis (Parser):** Takes the token stream and uses a Recursive Descent algorithm to build an Abstract Syntax Tree (AST) to ensure the code follows the grammar rules.
 
